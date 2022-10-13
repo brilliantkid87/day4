@@ -25,118 +25,86 @@
     </nav>
 
     <!-- Add Project -->
-    <form>
-        <div class="container">
-            <h2>Add My Project</h2>
-            
-            <div class="project-name">
-                <label for="project-name">Project Name</label>
-                <input type="text" name="" id="project-name">
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <label for="start-date">Start Date</label>
-                    <input type="date" name="" id="start-date">
-                </div>
-
-                <div class="column">
-                    <label for="end-date">End Date</label>
-                    <input type="date" name="" id="end-date">
-                </div>
-            </div>
-
-            <div class="description">
-                <label for="description">Description</label>
-                <textarea name="" id="description" cols="30" rows="10"></textarea>
-            </div>
-
-            <div class="input-technologies">
-                <div class="technologies-group">
-                    <input value="fa-brands fa-node-js" type="checkbox" id="nodejs">
-                    <label for="nodejs">Node Js</label><br>
-                    <input value="fa-brands fa-react" type="checkbox" id="reactjs">
-                    <label for="reactjs">React Js</label><br>
-                    <input value="fa-brands fa-square-js" type="checkbox" id="nextjs">
-                    <label for="nextjs">Next Js</label><br>
-                    <input value="fa-brands fa-css3" type="checkbox" id="typescript">
-                    <label for="typescript">TypeScript</label><br>
-                </div>
-            </div>
-            
-            <div class="input-image">
-                <label for="my-file">Upload Image</label>
-                <input type="file" name="" id="my-file">
-            </div>
-
-            <div class="input-submit">
-                <button type="button">Submit</button>
-            </div>
-
-        </div>
-    </form>
-
-    <!-- Project -->
-    <div class="project-list col-3 row-2">
-        <div class="card">
-            <img src="/assets/image/pngwing.com.png" width="100%" alt="">
-            <h5>Mobile App</h5>
-            <p>Duration : 5 Month</p>
-            <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-            <div class="project-technologies">
-                <i class="fa-brands fa-node-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-css3"></i>
-            </div>
-            <div class="buttons">
-                <div class="input-btn">
-                    <button type="button" class="action_btn">Save</button>
-                    <button type="button" class="action_btn">Cancel</button>
-                </div>
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div class="project-name">
+                        <label for="input-projectname">Project Name</label>
+                        <input type="text" name="" id="input-projectname">
+                    </div>
+        
+                    <div class="row">
+                        <div class="column">
+                            <label for="start-date">Start Date</label>
+                            <input type="date" name="" id="start-date">
+                        </div>
+        
+                        <div class="column">
+                            <label for="end-date">End Date</label>
+                            <input type="date" name="" id="end-date">
+                        </div>
+                    </div>
+        
+                    <div class="description">
+                        <label for="input-description">Description</label>
+                        <textarea name="" id="input-description" cols="30" rows="10"></textarea>
+                    </div>
+        
+                    <div class="input-technologies">
+                        <div class="technologies-group">
+                            <input value="fa-brands fa-node-js" type="checkbox" id="technologies">
+                            <label for="nodejs">Node Js</label><br>
+                            <input value="fa-brands fa-react" type="checkbox" id="tech2">
+                            <label for="reactjs">React Js</label><br>
+                            <input value="tech3" type="checkbox" id="">
+                            <label for="nextjs">Next Js</label><br>
+                            <input value="tech4" type="checkbox" id="">
+                            <label for="typescript">TypeScript</label><br>
+                        </div>
+                    </div>
+                    
+                    <div class="input-image">
+                        <label for="input-blog-image">Upload Image</label>
+                        <input type="file" name="" id="input-blog-image">
+                    </div>
+        
+                    <div class="input-submit">
+                        <button>Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
-
-        <div class="card">
-            <img src="/assets/image/pngwing.com.png" width="100%" alt="">
-            <h5>Mobile App</h5>
-            <p>Duration : 5 Month</p>
-            <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-            <div class="project-technologies">
-                <i class="fa-brands fa-node-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-css3"></i>
-            </div>
-            <div class="buttons">
-                <div class="input-btn">
-                    <button type="button" class="action_btn">Save</button>
-                    <button type="button" class="action_btn">Cancel</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/assets/image/pngwing.com.png" width="100%" alt="">
-            <h5>Mobile App</h5>
-            <p>Duration : 5 Month</p>
-            <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-            <div class="project-technologies">
-                <i class="fa-brands fa-node-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-css3"></i>
-            </div>
-            <div class="buttons">
-                <div class="input-btn">
-                    <button type="button" class="action_btn">Save</button>
-                    <button type="button" class="action_btn">Cancel</button>
-                </div>
-            </div>
-        </div>
-
     </div>
 
-    <script src="/project.js"></script>
+    
+    <!-- Project -->
+    <div>
+        <h1>My Project</h1>
+    </div>
+    <div id="contents" class="blog-list">
+
+        <div class="project-list">
+            <div class="card">
+                <img src="/assets/image/pngwing.com.png" width="100%" alt="">
+                <h5>Mobile App</h5>
+                <p>Duration : 5 Month</p>
+                <p class="p-content">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                <i class="fa-brands fa-google-play"></i>
+                <i class="bi bi-android2"></i>
+                <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="buttons">
+                    <div class="input-btn">
+                        <button type="button" class="action_btn">Save</button>
+                        <button type="button" class="action_btn">Cancel</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script src="project.js"></script>
 </body>
 </html>
